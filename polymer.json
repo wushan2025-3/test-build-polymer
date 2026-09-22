@@ -1,0 +1,22 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/my-app.js",
+  "sources": [
+    "src/**/*",
+    "index.html"
+  ],
+  "extraDependencies": [
+    "node_modules/@webcomponents/webcomponentsjs/*.js"
+  ],
+  "builds": [
+    {
+      "preset": "es6-unbundled",
+      "addServiceWorker": false
+    }
+  ],
+  "moduleResolution": "node",
+  "npm": true,
+  "lint": {
+    "rules": []
+  }
+}

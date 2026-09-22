@@ -3,14 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "polymer build",
+    "postbuild": "cp -r build/es6-unbundled/* build/",
+    "serve": "polymer serve"
   },
   "dependencies": {
     "@polymer/polymer": "^3.5.2"
   },
   "devDependencies": {
-    "vite": "^5.4.0"
+    "polymer-cli": "^1.9.11"
   }
 }
